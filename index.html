@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameStore - Top up your favorite games online instantly with secure payment and instant delivery.">
+  <meta name="author" content="Justdan">
+  <title>Game Store - Interactive Landing Page</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <!-- Header Section -->
+  <header class="bg-gray-800 sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-3xl font-bold text-yellow-400">Game<span class="text-white">Store</span></h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#games" class="hover:text-yellow-400">Games</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('hero-bg.jpg');">
+    <div class="text-center" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Top Up Games Online Instantly</h2>
+      <p class="text-lg md:text-xl mb-6">Get game credits and items for your favorite games in just a few clicks!</p>
+      <a href="#games" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-yellow-500">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="py-20 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-yellow-400" data-aos="fade-right">Popular Games</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Mobile Legends Card -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all" data-aos="flip-left">
+          <img src="mobilelegend.jpeg" alt="Mobile Legends" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mobile Legends</h3>
+            <p>Top up diamonds for an enhanced gaming experience.</p>
+          </div>
+        </div>
+        <!-- Free Fire Card -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all" data-aos="flip-left" data-aos-delay="200">
+          <img src="freefire.jpg" alt="Free Fire" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Free Fire</h3>
+            <p>Get your favorite skins and bundles now!</p>
+          </div>
+        </div>
+        <!-- PUBG Card -->
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all" data-aos="flip-left" data-aos-delay="400">
+          <img src="pubg.png" alt="PUBG" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">PUBG Mobile</h3>
+            <p>Upgrade your Royale Pass with ease.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-yellow-400" data-aos="fade-up">About Us</h2>
+      <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="200">
+        GameStore is your trusted platform for seamless top-up experiences. With secure payments and instant delivery, we aim to elevate your gaming journey.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-yellow-400" data-aos="zoom-in">Contact Us</h2>
+      <form action="#" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg mx-auto w-full md:w-1/2" data-aos="zoom-in" data-aos-delay="200">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none">
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none">
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 focus:outline-none"></textarea>
+        <button type="submit" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-yellow-500">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-4 text-center">
+    <p class="text-sm text-gray-400">&copy; 2024 GameStore. All rights reserved.</p>
+  </footer>
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- AOS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
